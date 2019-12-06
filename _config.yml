@@ -1,0 +1,13 @@
+title: "KM"
+author: "Kevin Ma"
+email: "me@kevinma.net"
+baseurl: ""
+url: ""
+theme: minima
+minima:
+  date_format: "%Y-%m-%d"
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+permalink: pretty

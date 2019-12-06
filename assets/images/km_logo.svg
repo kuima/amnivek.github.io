@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180">
+    <rect fill="currentColor" x="0" y="0" width="320" height="180" />
+    <polygon fill="white" points="30,30 60,30 60,90 120,30 160,30 100,90 160,150 120,150 80,110 60,130 60,150 30,150" />
+    <polygon fill="white" points="160,30 190,30 225,65 260,30 290,30 290,150 260,150 260,70 225,105 190,70 190,150 160,150" />
+</svg>
