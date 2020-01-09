@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 120" width="130" height="60">
+    <defs>
+        <linearGradient id="Gradient1" gradientUnits="userSpaceOnUse" x1="30" x2="50" y1="70" y2="70">
+            <stop offset="0" stop-color="#000" stop-opacity="0.6" />
+            <stop offset="1" stop-color="#000" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="Gradient2" gradientUnits="userSpaceOnUse" x1="60" x2="84" y1="70" y2="84">
+            <stop offset="0" stop-color="#000" stop-opacity="0.6" />
+            <stop offset="1" stop-color="#000" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="Gradient3" gradientUnits="userSpaceOnUse" x1="160" x2="180" y1="40" y2="40">
+            <stop offset="0" stop-color="#000" stop-opacity="0.6" />
+            <stop offset="1" stop-color="#000" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="Gradient4" gradientUnits="userSpaceOnUse" x1="230" x2="210" y1="40" y2="40">
+            <stop offset="0" stop-color="#000" stop-opacity="0.6" />
+            <stop offset="1" stop-color="#000" stop-opacity="0" />
+        </linearGradient>
+    </defs>
+
+    <polygon fill="#333537" points="0,0 30,0 30,60 90,0 130,0 70,60 130,120 90,120 50,80 30,100 30,120 0,120" />
+    <polygon fill="#333537" points="130,0 160,0 195,35 230,0 260,0 260,120 230,120 230,40 195,75 160,40 160,120 130,120" />
+
+    <polygon fill="url(#Gradient1)" points="30,60 90,0 130,0 70,60 30,100" />
+    <polygon fill="url(#Gradient2)" points="70,60 130,120 90,120 50,80" />
+    <polygon fill="url(#Gradient3)" points="160,0 160,40 195,75 195,35" />
+    <polygon fill="url(#Gradient4)" points="195,35 195,75 230,40 230,0" />
+</svg>
