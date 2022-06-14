@@ -18,12 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: KM Blog
+title: Kui Ma Blog
+author: Kui Ma
 email: me@kevinma.net
 description: >- # this means to ignore newlines until "baseurl:"
   Keep learning in depth.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://kevinma.net" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: mabondma
 github_username:  amnivek
 rss: rss
@@ -36,6 +37,11 @@ show_excerpts: false
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+lang: zh-CN
+locale: zh_CN
+
+permalink: pretty
 
 # Exclude from processing.
 # The following items will not be processed, by default.
