@@ -20,25 +20,21 @@
 
 title: KM Blog
 email: me@kevinma.net
-author: KM
 description: >- # this means to ignore newlines until "baseurl:"
   Keep learning in depth.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
+# twitter_username: mabondma
 github_username:  amnivek
-
-# Pagination settings
-paginate: 5
-paginate_path: "/posts/page:num/"
+rss: rss
 
 # Build settings
-remote_theme: StartBootstrap/jekyll-theme-clean-blog
-# theme: jekyll-theme-clean-blog
+theme: minima
+minima:
+  date_format: "%Y-%m-%d"
+show_excerpts: false
 plugins:
   - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-seo-tag
 
 # Exclude from processing.
@@ -60,6 +56,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-markdown: kramdown
-highlighter: rouge
