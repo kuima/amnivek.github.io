@@ -22,7 +22,7 @@ title: Kevin Blog
 author: Kevin Ma
 email: me@kevinma.net
 description: >- # this means to ignore newlines until "baseurl:"
-  Keep learning in depth.
+  深度地学习。
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://kevinma.net" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: mabondma
@@ -42,6 +42,8 @@ lang: zh-CN
 locale: zh_CN
 
 permalink: pretty
+
+markdown: kramdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
