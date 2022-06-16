@@ -82,8 +82,8 @@ $$ f(x_1, x_2, \ldots , x_n) $$
 
 点 $$ (a, b, \ldots , n) $$ 处的梯度为：
 
-$$ \nabla f(a, b, \ldots , n) = [\frac{\partial f}{\partial x_1}(a), \frac{\partial f}{\partial x_2}(b), \ldots , \frac{\partial f}{\partial x_n}(n)] $$
+$$ \nabla f(a, b, \ldots , n) = \begin{bmatrix} \frac{\partial f}{\partial x_1}(a), \frac{\partial f}{\partial x_2}(b), \ldots , \frac{\partial f}{\partial x_n}(n) \end{bmatrix} $$
 
 引入步长因子 $$ \epsilon $$ 后的更新操作为：
 
-$$ [x_1, x_2, \ldots , x_n] \leftarrow [a, b, \ldots , n] - \begin{bmatrix} \frac{\partial f}{\partial x_1}(a), \frac{\partial f}{\partial x_2}(b), \ldots , \frac{\partial f}{\partial x_n}(n) \end{bmatrix} * \epsilon $$
+$$ \begin{bmatrix} x_1, x_2, \ldots , x_n \end{bmatrix} \leftarrow \begin{bmatrix} a, b, \ldots , n \end{bmatrix} - \begin{bmatrix} \frac{\partial f}{\partial x_1}(a), \frac{\partial f}{\partial x_2}(b), \ldots , \frac{\partial f}{\partial x_n}(n) \end{bmatrix} * \epsilon $$
