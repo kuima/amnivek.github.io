@@ -14,7 +14,7 @@ $$ f'(x) =\frac{\mathrm{d}f}{\mathrm{d}x} $$
 
 对于多元函数，我们使用梯度进行描述。梯度是一个**向量**，向量的每一个分量是对各参数求偏导的结果。
 
-$$ \nabla f(x_1, x_2, \ldots , x_n) = \begin{bmatrix} \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \ldots , \frac{\partial f}{\partial x_n} \end{bmatrix} $$
+$$ \nabla{f(x_1, x_2}, \ldots , x_n) = \begin{bmatrix} \frac{\partial{f}}{\partial{x_1}}, \frac{\partial{f}}{\partial{x_2}}, \ldots , \frac{\partial{f}}{\partial{x_n}} \end{bmatrix} $$
 
 在机器学习中，我们接触的几乎都是多参数问题，为了便于说明和可视化，下面以只有一个参数的函数作为示例。
 
@@ -88,8 +88,24 @@ $$ f(x_1, x_2, \ldots , x_n) $$
 
 点 $$ (a, b, \ldots , n) $$ 处的梯度为：
 
-$$ \nabla f(a, b, \ldots , n) = \begin{bmatrix} \frac{\partial f}{\partial x_1}(a), \frac{\partial f}{\partial x_2}(b), \ldots , \frac{\partial f}{\partial x_n}(n) \end{bmatrix} $$
+$$ \nabla{f(a, b, \ldots , n)} = \begin{bmatrix} \frac{\partial{f}}{\partial{x_1}}(a), \frac{\partial{f}}{\partial{x_2}}(b), \ldots , \frac{\partial{f}}{\partial{x_n}}(n) \end{bmatrix} $$
 
 引入步长因子 $$ \epsilon $$ 后的更新操作为：
 
-$$ \begin{bmatrix} x_1, x_2, \ldots , x_n \end{bmatrix} \leftarrow \begin{bmatrix} a, b, \ldots , n \end{bmatrix} - \begin{bmatrix} \frac{\partial f}{\partial x_1}(a), \frac{\partial f}{\partial x_2}(b), \ldots , \frac{\partial f}{\partial x_n}(n) \end{bmatrix} * \epsilon $$
+$$ \begin{bmatrix} x_1, x_2, \ldots , x_n \end{bmatrix} \leftarrow \begin{bmatrix} a, b, \ldots , n \end{bmatrix} - \begin{bmatrix} \frac{\partial f}{\partial x_1}(a), \frac{\partial{f}}{\partial{x_2}}(b), \ldots , \frac{\partial{f}}{\partial{x_n}}(n) \end{bmatrix} * \epsilon $$
+
+以 $$ f(x_1, x_2) = x_1^2 + x_2^2 $$ 为例，其梯度为：
+
+$$ \nabla{f(x_1, x_2)} = \begin{bmatrix} \frac{1}{2}x_1, \frac{1}{2}x_2 \end{bmatrix} $$
+
+初始化 $$ (x_1, x_2) = (2, 4) $$，此处的梯度为 $$ \begin{bmatrix} 1, 2 \end{bmatrix} $$。
+
+同样使用 $$ \epsilon = 0.5 $$。
+
+则更新后的 $$ (x_1, x_2) $$ 为：
+
+$$ \begin{bmatrix} x_1, x_2 \end{bmatrix} = \begin{bmatrix} 2, 4 \end{bmatrix} - \begin{bmatrix} 1, 2 \end{bmatrix} * 0.5 = \begin{bmatrix} 1.5, 3 \end{bmatrix} $$
+
+多次迭代后，绘制出更新路线如下：
+
+![TwoVariablesFunctionAndGradientDescent](/images/posts/TwoVariablesFunctionAndGradientDescent.png)
