@@ -49,6 +49,16 @@ $$ \boldsymbol{W}_{hf} $$、$$ \boldsymbol{W}_{hi} $$、$$ \boldsymbol{W}_{ho} $
 
 $$  \boldsymbol{b}_f $$、$$  \boldsymbol{b}_i $$、$$  \boldsymbol{b}_o $$、$$  \boldsymbol{b}_g $$ 是偏置向量。
 
+LSTM 的计算过程：
+
+$$
+\boldsymbol{c}_t = \boldsymbol{f}_t \otimes \boldsymbol{c}_{t-1} + \boldsymbol{i}_t \otimes \boldsymbol{g}_t
+$$
+
+$$
+\boldsymbol{y}_t = \boldsymbol{h}_t = \boldsymbol{o}_t \otimes \tanh (\boldsymbol{c}_t)
+$$
+
 # GRU (Gated Recurrent Unit)
 
 LSTM 在 1997 年首次被提出，其后出现了多种变体进行改进。2014 年出现的 GRU 以其更少的参数数量，且与 LSTM 相比并未出现明显下滑的性能，得到人们的青睐。
