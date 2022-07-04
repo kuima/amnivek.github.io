@@ -69,3 +69,5 @@ google_analytics: G-7QEQKZNKVK
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - resources
