@@ -89,3 +89,9 @@ $$
 $$
 \boldsymbol{y}_t = \boldsymbol{h}_t = \boldsymbol{z}_t \otimes \boldsymbol{h}_{t-1} + (1 - \boldsymbol{z}_t) \otimes \boldsymbol{g}_t
 $$
+
+# Vanilla RNN
+
+最后给出最基本的 RNN 的结构图，对比发现是多么的朴实无华：
+
+![VanillaRNNArchitecture](/images/posts/VanillaRNNArchitecture.png)
