@@ -3,6 +3,8 @@ layout: page
 title: Kui Ma
 permalink: /about/
 ---
+![KMLogo](/images/pages/KMLogo.svg)
+
 Full-stack engineer, focus on machine learning and NLP.
 
 ### Word Experiences
