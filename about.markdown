@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Kui Ma
+title: About
 permalink: /about/
 ---
 ![KMLogo](/images/pages/KMLogo.svg)
 
-Full-stack engineer, focus on machine learning and NLP.
+I'm **Kui Ma**, aka **Kevin Ma**, aka **Ma Bond**. Full-stack engineer, focus on machine learning and NLP.
 
 ### Word Experiences
 
@@ -23,3 +23,5 @@ System.
 - 2013 ~ 2015, TiUP, mobile development group leader
     - Developed and published several iOS apps;
     - Led the workflow of the development team on both Android and iOS platforms.
+
+[https://kui.ma](https://kui.ma) $$ = $$ [https://kevinma.net](https://kevinma.net)
