@@ -28,22 +28,22 @@ $$
 
 $$ \boldsymbol{\theta}\cdot\boldsymbol{x} $$ 是向量点积，$$ \boldsymbol{\theta}^{\intercal}\boldsymbol{x} $$ 是矩阵乘法。
 
-为了简化描述，把 $$b$$ 纳入到 $$\boldsymbol{w}$$ 中：
+为了简化描述，把 $$b$$ 和 $$\theta$$ 合并在 $$\boldsymbol{w}$$ 中：
 
 $$
-\boldsymbol{w} = [b, w_1, w_2, \dots, w_n]
+\boldsymbol{w} = [b, \theta_1, \theta_2, \dots, \theta_n]
 $$
 
-输入则变为：
+输入则相应地变为：
 
 $$
 \boldsymbol{x} = [1, x_1, x_2, \dots, x_n]
 $$
 
-从而可以在表达式中省略 $$b$$：
+从而表达式可以简化为：
 
 $$
-\hat{y} = \boldsymbol{\theta}\cdot\boldsymbol{x}  = \boldsymbol{\theta}^{\intercal}\boldsymbol{x}
+\hat{y} = \boldsymbol{w}\cdot\boldsymbol{x}  = \boldsymbol{w}^{\intercal}\boldsymbol{x}
 $$
 
 线性回归通常使用**均方误差**（Mean Squared Error，**MSE**）作为损失函数：

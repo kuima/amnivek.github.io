@@ -47,13 +47,13 @@ $$
 原理很简单，模型首先计算出每个分类的分数，然后对这些分数应用 softmax 函数（也叫归一化函数），使其满足和为 1，且值域落于 $$ (0, 1) $$。
 
 $$
-\sigma(\hat{p}_{i}) = \frac{e^{\hat{p}_i}}{\sum_{k=1}^{K}{e^{\hat{p}_{k}}}}
+\hat{y}_{i} = \sigma(\hat{s}_{i}) = \frac{e^{\hat{s}_i}}{\sum_{k=1}^{K}{e^{\hat{s}_{k}}}}
 $$
 
 取最高概率的类别：
 
 $$
-\hat{y} = \arg\min_{k}\sigma(\boldsymbol{\hat{p}})
+\arg\max_{k}\sigma(\boldsymbol{\hat{y}})
 $$
 
 Softmax 回归一次只能预测一个类，它是多类别，但不是多输出。类和类之间是**互斥**的。
