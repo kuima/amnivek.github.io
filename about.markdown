@@ -7,9 +7,11 @@ permalink: /about/
 
 I'm **Kui Ma**, aka **Kevin Ma**, aka **Ma Bond**. Full-stack engineer, focus on machine learning and NLP.
 
-### Word Experiences
+### Work Experiences
 
-- 2015 ~ today, Magi (Peak Labs), full-stack engineer/machine learning engineer
+- 2022 ~ today, 4Paradigm, full-stack engineer
+    - Designed and developed SageRA.
+- 2015 ~ 2022, Magi (Peak Labs), full-stack engineer/machine learning engineer
     - Designed and developed the Magi Open Information Extraction System;
     - Developed Magi Knowledge Graph;
     - Designed and developed the Magi Web;
